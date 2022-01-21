@@ -1,0 +1,21 @@
+@media(min-width: 768px){
+    .news-input{
+        width: 50%;
+    }
+}
+
+.card-title{
+    border-top: 1px solid white;
+}
+
+body::before{
+    display: block;
+    content: '';
+    height: 60px;
+}
+
+#map{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}

@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+	
+	<link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Western Wranglers</title>
+</head>
+<body>
+	<!-- navbar -->
+	<nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+		<div class="container">
+			<!-- <a href="#" class="navbar-brand"><span class="text-warning">Western Wranglers</span> Robotics Academy</a> -->
+			<table>
+				<tr>
+					<td style="margin-bottom: 3px;"><img src="img/logo.jpg" width="20%" height="20%" ></td>
+					<td><h1><a href="#" class="navbar-brand"><span class="text-warning lead">Western Wranglers</span> Robotics Academy</a></td></h1>
+				</tr>
+			</table>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+				<span class="navbar-toggler-icon">
+
+				</span>
+			</button>
+			<div class="collapse navbar-collapse" id="navmenu">
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item">
+						<a href="#learn" class="nav-link">
+							Learn and Challenge
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="#questions" class="nav-link">
+							Questions
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="#instructors" class="nav-link">
+							Instructors
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>	
+	</nav>
+
+	<!-- showcase -->
+    <section class="bg-dark text-light pt-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+		<div class="container">
+			<div class="d-sm-flex align-items-center justify-content-between" >
+				<div>
+					<h1>Align your Child with <span class="text-warning">Future Innovations</span> </h1>
+					<p class="lead my-4">We partner with schools to deliver hands-on <span class="text-warning">Robotics Workshops and Competitions</span>.
+						Our coaches are top-notch Robotics/Software engineers who have vast experience in 
+						teaching STEM to children and teenagers.
+
+					</p>
+					<button 
+						type="button"
+						class="btn btn-primary btn-lg mb-2"
+						data-toggle="modal" 
+						data-bs-toggle="modal"
+						data-target="#exampleModal" 
+						data-bs-target="enroll">
+					Enroll your school
+					</button>
+				</div>
+				<img class="img-fluid w-50 d-none d-sm-block" src="img/robot-1.jpg" alt="">
+			</div>
+		</div>
+	</section>
+
+	<!-- newsletter -->
+	<section class="bg-primary text-light p-5">
+		<div class="container">
+			<div class="d-md-flex justify-content-between align-items-center">
+				<h3 class="mb-3 mb-md-0">Sign up for Newletters</h3>
+
+				<div class="input-group news-input">
+					<input type="text" class="form-control" 
+					placeholder="Enter email"
+					aria-label="Enter email"
+					aria-describedby="button-addon2"/>
+					<button class="btn btn-dark btn-lg" type="button">Button</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Boxes -->
+	<section class="p-5">
+		<div class="container">
+			<div class="row text-center g-2">
+				<div class="col-md">
+					<div class="card bg-dark text-light">
+						<div class="card-body text-center">
+							<div class="h1 mb-3">
+								<i class="bi bi-joystick"></i>
+							</div>
+							<h3 class="card-title mb-3">Kits & Softwares</h3>
+							<p class="card-text">High-quality Robotics Kits with 
+							custom Android Software for configuration and GUI Programming.</p>
+							<a href="#" class="btn btn-primary">Order a Kit</a>
+						</div>
+					</div>	
+				</div>
+				<div class="col-md">
+					<div class="card bg-secondary text-light">
+						<div class="card-body text-center">
+							<div class="h1 mb-3">
+								<i class="bi bi-laptop"></i>
+							</div>
+							<h3 class="card-title mb-3">Workshops/Hackathons </h3>
+							<p class="card-text">We organize quarterly Robotics workshops 
+								and Hackathons for elementary & high school students.</p>
+							<a href="#" class="btn btn-dark">Register your School</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md">
+					<div class="card bg-dark text-light">
+						<div class="card-body text-center">
+							<div class="h1 mb-3">
+								<i class="bi bi-people-fill"></i>
+							</div>
+							<h3 class="card-title mb-3">Instructor Outsourcing</h3>
+							<p class="card-text">Our highly experienced 
+								tech. instructors are available, for and keen on
+								imparting children and teenagers. 
+							</p>
+							<a href="#" class="btn btn-primary">Hire an Instructor</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- partner revo. robo -->
+	<section id="parner" class="p-5">
+		<div class="container">  
+			<div class="row align-items-center justify-content-between">
+				<div class="col-md">
+					<img src="img/robo-3.jpeg" alt="" class="img-fluid">
+				</div>
+				<div class="col-md p-5">
+					<h2>We are an Associate Service Provider to <span class="text-warning">Revolution Robotics, USA.</span></h2>
+					<p class="lead">We are a recognised Technology Education Partner with Revolution Robotics, USA. We are 
+						licensed to distribute Revolution Robotics kits and teach children and teenagers with these equipments 
+						all over the Nigerian space. 
+					</p>
+					<p class="lead">In order to achieve these goals, we organise Robotics Seminars and quartely Hackathons  
+						among schools in Nigeria. We have also deployed a handful of highly-sought-after Technology 
+						instructors to schools in Nigeria, with outstanding results.
+					</p>
+					<a href="https://web.facebook.com/WWranglers/posts/106484388582897?__cft__[0]=AZX8arpp656NpJyb40zOrQ_Cf5Vje4zIs2kzNm7JxEty_JutvCmGyDzwOS7jYWHuKFUkvVAkbUHtaXyZLQMQSRh8IPYTYCFESXLmtVugeNMQ4_SIRktKSdEWaLY3Cu422UzEAu_6idf25JEDaRV_m0uyuscoHq3QxAKetWgYw18Lhs2Rhlq-Jk4Bd7avcpMZEMwux0JUxKuxbI5vLLtF0l95&__tn__=-UK-R" class="btn btn-light mt-3">
+						<i class="bi bi-chevron-light"></i> Follow us..
+					</a>
+				</div>
+			</div>  
+		</div>
+	</section>
+
+	<!--  -->
+	<section id="parner" class="p-5 bg-dark text-light">
+		<div class="container">  
+			<div class="row align-items-center justify-content-between">
+				
+				<div class="col-md p-5">
+					<h2>We deploy, train <span class="text-warning">Coding and Robotics Instructors</span> for Schools.</h2>
+					<p class="lead">We are a recognised Technology Education Partner with Revolution Robotics, USA. We are 
+						licensed to distribute Revolution Robotics kits and teach children and teenagers with these equipments 
+						all over the Nigerian space. 
+					</p>
+					<p class="lead">In order to achieve these goals, we organise Robotics Seminars and quartely Hackathons  
+						among schools in Nigeria. We have also deployed a handful of highly-sought-after Technology 
+						instructors to schools in Nigeria, with outstanding results.
+					</p>
+					<a href="https://web.facebook.com/WWranglers/posts/106484388582897?__cft__[0]=AZX8arpp656NpJyb40zOrQ_Cf5Vje4zIs2kzNm7JxEty_JutvCmGyDzwOS7jYWHuKFUkvVAkbUHtaXyZLQMQSRh8IPYTYCFESXLmtVugeNMQ4_SIRktKSdEWaLY3Cu422UzEAu_6idf25JEDaRV_m0uyuscoHq3QxAKetWgYw18Lhs2Rhlq-Jk4Bd7avcpMZEMwux0JUxKuxbI5vLLtF0l95&__tn__=-UK-R" class="btn btn-light mt-3">
+						<i class="bi bi-chevron-light"></i> Follow us..
+					</a>
+				</div>
+				<div class="col-md">
+					<img src="img/robot-4.jpg" alt="" class="img-fluid">
+				</div>
+			</div>  
+		</div>
+	</section>
+
+	<!-- questions accordion -->
+	<section id="questions" class="p-5">
+		<div class="container">
+			<h2 class="text-center mb-4">Frequently Asked Questions</h2>
+			<div class="accordion accordion-flush" id="questions">
+				<!-- item 1 -->
+				<div class="accordion-item">
+				  	<h2 class="accordion-header">
+					<button 
+						class="accordion-button collapsed" 
+						type="button" 
+						data-bs-toggle="collapse" 
+						data-bs-target="#question-one" 
+					>
+					  My school already has an IT Teacher. Can Western Wranglers Train him/her in Robotics?
+					</button>
+				  	</h2>
+				  	<div 
+					  	id="question-one" 
+					  	class="accordion-collapse collapse" 
+						aria-labelledby="flush-headingOne" 
+						data-bs-parent="#questions">
+						<div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+				  </div>
+				</div>
+				<!-- item 2 -->
+				<div class="accordion-item">
+				 	<h2 class="accordion-header" id="flush-headingTwo">
+					<button 
+						class="accordion-button collapsed" 
+						type="button" 
+						data-bs-toggle="collapse" 
+						data-bs-target="#flush-collapseTwo" 
+					>
+					  I love the Robotics kits and want my school to have them, but we can't afford them yet!
+					</button>
+				  	</h2>
+				  	<div 
+					  	id="flush-collapseTwo" 
+					  	class="accordion-collapse collapse" 
+					  	aria-labelledby="flush-headingTwo" 
+					  	data-bs-parent="#accordionFlushExample"
+					>
+						<div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+				  </div>
+				</div>
+				<!-- item 3 -->
+				<div class="accordion-item">
+				  	<h2 class="accordion-header" id="flush-headingThree">
+					<button 
+						class="accordion-button collapsed" 
+						type="button" 
+						data-bs-toggle="collapse" 
+						data-bs-target="#flush-collapseThree" 
+					>
+					  I want my pupils to learn both Coding and Robotics. Does Western Wranglers have Coding Instructors?
+					</button>
+				  	</h2>
+				  	<div 
+					  	id="flush-collapseThree" 
+						class="accordion-collapse collapse" 
+						aria-labelledby="flush-headingThree" 
+						data-bs-parent="#accordionFlushExample"
+					>
+						<div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+				  	</div>
+				</div>
+				<!-- item 4 -->
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+				  <button 
+					  class="accordion-button collapsed" 
+					  type="button" 
+					  data-bs-toggle="collapse" 
+					  data-bs-target="#question-one" 
+				  >
+					I dont own a school. Can I purchase a Robotics kit for my Family?
+				  </button>
+					</h2>
+					<div 
+						id="question-one" 
+						class="accordion-collapse collapse" 
+					  aria-labelledby="flush-headingOne" 
+					  data-bs-parent="#questions">
+					  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+				</div>
+			  </div>
+			</div>
+		</div>
+	</section>
+
+	<section id="instructors" class="p-5 bg-primary">
+		<div class="container">
+			<h2 class="text-center text-white">Our Instructors</h2>
+			<p class="lead text-center text-white mb-5">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis voluptate 
+				quia exercitationem delectus expedita deleniti tempore! Excepturi quibusdam 
+				officia, possimus facilis rerum, aliquid rem voluptates recusandae magni 
+				iusto saepe exercitationem?
+			</p>
+
+			<div class="row g-4">
+				<div class="col-md-6 col-lg-3">
+					<div class="card bg-light">
+						<div class="card-body text-center">
+							<img src="https://randomuser.me/api/portraits/men/11.jpg" class="rounded-circle mb-3" alt="">
+							<h3 class="card-title mb-3">John Doe</h3>
+							<p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+								Labore possimus alias unde, iste officiis voluptatum pariatur nobis, veniam 
+								dolores modi culpa nam quo recusandae accusamus dolore cum veritatis enim 
+								aliquam?
+							</p>
+							<a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+							<a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+							<a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+							<a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-6 col-lg-3">
+					<div class="card bg-light">
+						<div class="card-body text-center">
+							<img src="https://randomuser.me/api/portraits/men/11.jpg" class="rounded-circle mb-3" alt="">
+							<h3 class="card-title mb-3">John Doe</h3>
+							<p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+								Labore possimus alias unde, iste officiis voluptatum pariatur nobis, veniam 
+								dolores modi culpa nam quo recusandae accusamus dolore cum veritatis enim 
+								aliquam?
+							</p>
+							<a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+							<a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+							<a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+							<a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-6 col-lg-3">
+					<div class="card bg-light">
+						<div class="card-body text-center">
+							<img src="https://randomuser.me/api/portraits/men/11.jpg" class="rounded-circle mb-3" alt="">
+							<h3 class="card-title mb-3">John Doe</h3>
+							<p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+								Labore possimus alias unde, iste officiis voluptatum pariatur nobis, veniam 
+								dolores modi culpa nam quo recusandae accusamus dolore cum veritatis enim 
+								aliquam?
+							</p>
+							<a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+							<a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+							<a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+							<a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-6 col-lg-3">
+					<div class="card bg-light">
+						<div class="card-body text-center">
+							<img src="https://randomuser.me/api/portraits/men/11.jpg" class="rounded-circle mb-3" alt="">
+							<h3 class="card-title mb-3">John Doe</h3>
+							<p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+								Labore possimus alias unde, iste officiis voluptatum pariatur nobis, veniam 
+								dolores modi culpa nam quo recusandae accusamus dolore cum veritatis enim 
+								aliquam?
+							</p>
+							<a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+							<a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+							<a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+							<a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- contact and map -->
+	<section class="p-5">
+		<div class="container">
+			<div class="row g-4">
+				<div class="col-md">
+					<h2 class="text-center mb-4">Contact Info</h2>
+					<ul class="list-group list-group-flush lead">
+						<li class="list-group-item">
+							<span class="fw-bold">Main location: </span>50 Main Street, Lagos.
+						</li>
+						<li class="list-group-item">
+							<span class="fw-bold">Enrollment phone: </span>+12345678901.
+						</li>
+						<li class="list-group-item">
+							<span class="fw-bold">Enrollment email: </span>example1@email.com.
+						</li>
+						<li class="list-group-item">
+							<span class="fw-bold">Student email: </span>example2@email.com.
+						</li>
+						<li class="list-group-item">
+							<span class="fw-bold">Main Location: </span>50 Main Street, Lagos.
+						</li>
+					</ul>
+				</div>
+				<div class="col-md">
+					<div id="map"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- footer -->
+	<footer class="p-5 bg-dark text-white text-center position-relative">
+		<div class="container">
+			<p class="lead">Copyright &copy; 2022 Western Wranglers</p>
+			<a href="" class="position-absolute bottom-0 end-0 p-5">
+				<i class="bi bi-arrow-up-circle h1"></i>
+			</a>
+		</div>
+	</footer>
+
+	<!-- Modal -->
+<div class="modal fade" id="enroll" tabindex="-1" role="dialog" aria-labelledby="enrollLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="enrollLabel">Modal title</h5>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body">
+		  <p class="lead">fill out the following form to enroll your school</p>
+		  <form action="">
+			  <div class="mb-3">
+				  <label for="School name" class="col-form-label">
+					  School name: 
+				  </label>
+			  </div>
+			  <div class="mb-3">
+				<label for="School name" class="col-form-label">
+					Address: 
+				</label>
+			</div>
+			<div class="mb-3">
+				<label for="School name" class="col-form-label">
+					Phone number: 
+				</label>
+			</div>
+			<div class="mb-3">
+				<label for="School name" class="col-form-label">
+					Email: 
+				</label>
+			</div>
+		  </form>
+		</div>
+		<div class="modal-footer">
+		  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		  <button type="button" class="btn btn-primary">Submit</button>
+		</div>
+	  </div>
+	</div>
+  </div>
+	
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+<script>
+	mapboxgl.accessToken = 'pk.eyJ1IjoiYmp3ZWFsdGh5IiwiYSI6ImNreW1vZTVsaTEzNGcybnVma3BrbTBoeXgifQ.LPdKXsJF8bHH_RA4WtoeOA';
+	var map = new mapboxgl.Map({
+	container: 'map',
+	style: 'mapbox://styles/mapbox/streets-v11',
+	center: [6.43855, 3.48156],
+	zoom: 18
+	});
+</script>
+</body>
+</html>
